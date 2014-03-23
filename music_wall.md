@@ -27,4 +27,4 @@ This should take you between 4 to 6 hours. Please have it completed
 
 * This application is *very* similar to the one built earlier via the tutorial. Feel free to use its [Commits](https://github.com/lighthouse-labs/sinatra-message-wall/commits/master) and Tutorial as a reference.
 * Write incremental code, much like you (hopefully) have been previously. When development web apps, much like how you were doing with your ruby apps, write a little bit of code that should yield some result and then ensure that it does yield that result (eg: refresh the page to see the change).
-* Be sure to create a repository on git and commit/push to it regularly. You can just one the one master branch for now.
+* Be sure to initialize a git repo for it commit to it regularly. Push to it a new Github repo regularly as well. You can just one the one master branch for now.
