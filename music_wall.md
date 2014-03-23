@@ -19,7 +19,12 @@ The user will be able to create and view the list of music (songs). Similar to t
 
 Use the [Sinatra Skeleton Code](https://github.com/lighthouse-labs/sinatra-skeleton) to get started, much like you did for your [First Sinatra App Tutorial](https://gist.github.com/kvirani/a82c32b3f01fc0840e20).
 
+## Estimated Time
+
+This should take you between 4 to 6 hours. Please have it completed
+
 ## Tips
 
 * This application is *very* similar to the one built earlier via the tutorial. Feel free to use its [Commits](https://github.com/lighthouse-labs/sinatra-message-wall/commits/master) and Tutorial as a reference.
 * Write incremental code, much like you (hopefully) have been previously. When development web apps, much like how you were doing with your ruby apps, write a little bit of code that should yield some result and then ensure that it does yield that result (eg: refresh the page to see the change).
+* Be sure to create a repository on git and commit/push to it regularly. You can just one the one master branch for now.
