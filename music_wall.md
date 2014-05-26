@@ -13,7 +13,7 @@ The track model can include the following fields/attributes:
 
 ## Actions
 
-Any visitor will be able to create and view the list of music (songs). Similar to the previous app, don't worry about implementing the ability to update or delete.
+Any visitor will be able to create and view the list of music (songs). Similar to the previous app, don't worry about implementing the ability to update or delete. (psst: We'll be doing that later, when "the requirements change"!)
 
 ## Getting Started
 
