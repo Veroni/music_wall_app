@@ -1,7 +1,7 @@
 Music Wall
 ================
 
-Create a Sinatra Application that allows anyone to add music (songs) to "wall" to share with the world. Users won't need to register to post music.
+Create a Sinatra Application that allows anyone to add music (songs) to a "wall" to share with the world. Users won't need to register to post music.
 
 ## The Model
 
