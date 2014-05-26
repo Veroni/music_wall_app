@@ -1,11 +1,12 @@
-Music Wall
-================
 
-Create a Sinatra Application that allows anyone to add music (songs) to a "wall" to share with the world. Users won't need to register to post music.
+## Goal 
+
+Create a Sinatra Application that allows anyone to add music (songs) to a public wall to share with the world. This app will be so open and chaotic that visitors don't even need to register a user account in order to post songs.
 
 ## The Model
 
 The track model can include the following fields/attributes:
+
 * Song Title (required)
 * Author (required)
 * URL (optional)
@@ -13,7 +14,7 @@ The track model can include the following fields/attributes:
 
 ## Actions
 
-The user will be able to create and view the list of music (songs). Similar to the previous app, don't worry about implementing the ability to update or delete.
+Any visitor will be able to create and view the list of music (songs). Similar to the previous app, don't worry about implementing the ability to update or delete.
 
 ## Getting Started
 
@@ -21,7 +22,7 @@ Use the [Sinatra Skeleton Code](https://github.com/lighthouse-labs/sinatra-skele
 
 ## Estimated Time
 
-This should take you between 4 to 6 hours. Please have it completed
+This should take you between 3 to 4 hours.
 
 ## Tips
 
