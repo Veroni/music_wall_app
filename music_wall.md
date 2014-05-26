@@ -1,4 +1,3 @@
-
 ## Goal 
 
 Create a Sinatra Application that allows anyone to add music (songs) to a public wall to share with the world. This app will be so open and chaotic that visitors don't even need to register a user account in order to post songs.
@@ -10,7 +9,7 @@ The track model can include the following fields/attributes:
 * Song Title (required)
 * Author (required)
 * URL (optional)
-* Timestamps (created_at and updated_at, as you should have with all tables)
+* Timestamps (`created_at` and `updated_at`, as you should have with all tables)
 
 ## Actions
 
