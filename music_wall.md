@@ -23,7 +23,7 @@ Use the [Sinatra Skeleton Code](https://github.com/lighthouse-labs/sinatra-skele
 
 ### Estimated Time
 
-This should take you between 3 to 4 hours.
+This app should take you between 3 to 4 hours to build.
 
 ## Tips
 
