@@ -1,0 +1,8 @@
+<% @messages.each do |message| %>
+  <div class="message">
+    <h3><%= message.title %> <samll>(by: <%= message.author %>)</samll></h3>
+      <p>
+        <%= message.content %>
+        <a href="/messages/new">Post a message... It's FREE (for now)!</a>
+      </p>
+  </div>
