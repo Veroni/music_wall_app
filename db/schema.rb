@@ -10,12 +10,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141020013153) do
+ActiveRecord::Schema.define(version: 20141020202710) do
 
-  create_table "messages", force: true do |t|
-    t.string "title"
-    t.string "author"
-    t.string "content"
+  create_table "songs", force: true do |t|
+    t.string   "title"
+    t.string   "author"
+    t.string   "url"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
 end
