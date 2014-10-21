@@ -9,7 +9,12 @@
   <a href="/login"><button>LogIn</button></a>
 </div>
 <div>
-  <a href="/"><button>Logout</button></a>
+  <a href="/logout"><button>Logout</button></a>
+</div>
+<div>
+  <a href="/songs">All songs</a>
 </div>
 
+<% if @current_user %>
 <p>You are logged in as: <%= @current_user.user_name %></p>
+<% end %>

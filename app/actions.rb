@@ -1,6 +1,7 @@
 # Homepage (Root path)
 get '/' do
-  @current_user ||= User.find session[:user_id]
+  # @current_user ||= User.find session[:user_id]
+  current_user
   erb :index
 end
 
@@ -26,17 +27,20 @@ get '/login' do
   erb :'login/index'
 end
 
-# helper do
-#   def current_user
-#     @current_user ||= User.find(session[user_id])
-#   end
-# end
+helpers do
+  def current_user
+    @current_user = session[:user_id] ? User.find(session[:user_id]) : nil
+  end
+end
 
 post '/songs/new' do
+  # song_user = current_user ? current_user.id : nil
+
   @song = Song.new(
-    title:  params[:title],
-    author: params[:author],
-    url:    params[:url]
+    title:   params[:title],
+    author:  params[:author],
+    url:     params[:url],
+    user:    current_user
     )
   if @song.save
     redirect '/songs'
@@ -58,7 +62,7 @@ end
 post '/login' do
   user_name = params[:user_name]
   password = params[:password]
-  user = User.where(user_name: user_name)[0]
+  user = User.where(user_name: user_name, password: password).first
   # binding.pry
   if user
     
@@ -69,6 +73,7 @@ post '/login' do
   end
 end
 
-post '/logout' do
+get '/logout' do
   session.clear
+  redirect '/'
 end
