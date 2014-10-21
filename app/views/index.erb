@@ -1,2 +1,15 @@
 <h1>Home Page</h1>
-<a href="/songs/new">Post a song...</a>
+<div>
+  <a href="/songs/new">Post a song...</a>
+</div>
+<div>
+  <a href="/users/new"><button>SignUp</button></a>
+</div>
+<div>
+  <a href="/login"><button>LogIn</button></a>
+</div>
+<div>
+  <a href="/"><button>Logout</button></a>
+</div>
+
+<p>You are logged in as: <%= @current_user.user_name %></p>

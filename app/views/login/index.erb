@@ -9,18 +9,14 @@
   </div>
 <% end %>
 
-<form action='/songs/new' method="post">
+<form action='/login' method="post">
   <div>
-    <label>Author:</label>
-    <input type="text" name="author" value="<%= @song && @song.author %>">
+    <label>User name:</label>
+    <input type="text" name="user_name" value="<%= @user && @user.user_name %>">
   </div>
   <div>
-    <label>Title:</label>
-    <input type="text" name="title" value="<%= @song && @song.title %>">
-  </div>
-  <div>
-    <label>URL: </label>
-    <input type="text" name="url" value="<%= @song && @song.url %>">
+    <label>Password: </label>
+    <input type="password" name="password" placeholder="******" value="<%= @user && @user.password %>">
   </div>
   <div>
     <input type="submit" value="Submit">
