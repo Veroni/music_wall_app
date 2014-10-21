@@ -15,7 +15,6 @@ end
 
 get '/songs/:id' do
   @song = Song.find params[:id]
-  # @likes = Upvote.where(song_id: params[:id]).count
   @likes = @song.upvotes.count
   erb :'songs/show'
 end
@@ -56,6 +55,7 @@ post '/users/new' do
     password:  params[:password]
     )
   @user.save
+  current_user 
   redirect '/'
 end
 
