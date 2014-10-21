@@ -1,6 +1,5 @@
 # Homepage (Root path)
 get '/' do
-  # @current_user ||= User.find session[:user_id]
   current_user
   erb :index
 end
@@ -16,6 +15,8 @@ end
 
 get '/songs/:id' do
   @song = Song.find params[:id]
+  # @likes = Upvote.where(song_id: params[:id]).count
+  @likes = @song.upvotes.count
   erb :'songs/show'
 end
 
@@ -34,7 +35,6 @@ helpers do
 end
 
 post '/songs/new' do
-  # song_user = current_user ? current_user.id : nil
 
   @song = Song.new(
     title:   params[:title],
@@ -63,11 +63,22 @@ post '/login' do
   user_name = params[:user_name]
   password = params[:password]
   user = User.where(user_name: user_name, password: password).first
-  # binding.pry
   if user
-    
     session[:user_id] = user.id
     redirect '/'
+  else
+    redirect '/login'
+  end
+end
+
+post '/songs/:id/like' do
+  if current_user
+    upvote = Upvote.new(
+      user: current_user,
+      song_id: params[:id]
+      )
+    upvote.save
+    redirect "/songs/#{params[:id]}"
   else
     redirect '/login'
   end

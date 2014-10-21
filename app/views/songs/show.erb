@@ -1,8 +1,12 @@
 <h1><%= @song.title %></h1>
 
-<p>
-Author: <%= @song.author %>
-</p>
-
+<p>Author: <%= @song.author %></p>
+<p>Uploaded by: <%= @song.user ? @song.user.user_name : "Unknown" %></p>
+<form action='/songs/<%= @song.id%>/like' method="post">
+  <button type="submit">
+    Like
+  </button>
+</form>
+<p>Likes: <%= @likes %></p>
 <hr/>
 <a href="/songs">Back to All Songs</a>
